@@ -14,15 +14,5 @@ function pickRandom(list) {
 
 global.shiraori = [
 'halo kak',
-'knp kak',
-'kak jalan yuk>_<',
-'jangan ganggu shiraori lagi sibuk',
-'bentar ewe dulu ama ilman',
-'Shiraori lagi makan',
-'Shiraori disini',
-'Donasi dulu',
-'Shiraori pengen punya adik, tapi gk dibolehin ama ilman:(',
-'bagi duit dulu/',
-'Silahkan ketik .menu ya kak',
-'Shiraori istirahat dulu',
+'jangan spam',
 ]
