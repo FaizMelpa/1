@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
-    'ilman': 'ilman',
+    'ilman': 'error',
     'game': 'Game',
     'rpg': `Rpg ${global.opts['restrict'] ? '' : '(perbaikan)'}`,
     'jadian': 'Jadian',
@@ -196,8 +196,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *SHIRAORI BOT*\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n│└────────────┈ ⳹\n│       *「 TIME 」*\n│◦➛ Hari: *${week}*\n│◦➛ Weton: *${weton}*\n│◦➛ Tanggal: *${date}*\n│◦➛ Waktu: *${time}* WITA\n│◦➛ Islam: *${dateIslamic}*\n│◦➛ Uptime: *${uptime}*\n├──────────────┈ ⳹\n│ Database ${rtotalreg} dari ${totalreg}\n│ Owner: Ilman\n│ Note: Jangan spam bot\n╰━━━━━━━━━━━━━━━━┈ ⳹`,
-          "description": "© SHIRAORI BOT",
+          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *ERROR BOT*\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n│└────────────┈ ⳹\n│       *「 TIME 」*\n│◦➛ Hari: *${week}*\n│◦➛ Weton: *${weton}*\n│◦➛ Tanggal: *${date}*\n│◦➛ Waktu: *${time}* WITA\n│◦➛ Islam: *${dateIslamic}*\n│◦➛ Uptime: *${uptime}*\n├──────────────┈ ⳹\n│ Database ${rtotalreg} dari ${totalreg}\n│ Owner: Ilman\n│ Note: Jangan spam bot\n╰━━━━━━━━━━━━━━━━┈ ⳹`,
+          "description": "© ERROR BOT",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -256,7 +256,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": `${_p}? premium`
                 }, {
                   "title": "AdminShiraori",
-                  "description": "fitur khusus admin Shiraori",
+                  "description": "fitur khusus admin",
                   "rowId": `${_p}? adminban`
                 }, {
                   "title": "Internet",
